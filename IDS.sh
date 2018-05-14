@@ -8,7 +8,7 @@ echo "Setting target to $target";
 
 #While principal
 while [ 1 -eq 1 ];do
-	if [ $(($SECONDS%5)) -eq 0 ]; then # every 10 seconds
+	if [ $(($SECONDS%15)) -eq 0 ]; then # every 10 seconds
         prev_smtp_syntax_spotted=$smtp_syntax_spotted;
 		time_now=$(date '+%D %r');
 		
